@@ -1,46 +1,8 @@
-﻿@model IEnumerable<AcmeSacHotel2024.Dominio.Entidades.HotelAcme>
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
 
-<div class="w-100 card border-0 p-4">
-    <div class="card-header bg-success bg-gradient ml-0 py-0">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1 class="text-white">Lista de servicios</h1>
-            </div>
-        </div>
-    </div>
-
-    <div class="card-body border p-4">
-        <div class="row pb-3">
-            <div class="col-6 offset-sm-6 text-end">
-            <a asp-controller="Hotel" asp-action="" class="btn btn-secondary">
-                    <i class="bi bi-plus-circle"></i>
-                    Crear nuevos datos
-            </a>
-            </div>
-        </div>
-
-        <table class="table table-bordered table-striped">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Area</th>
-                    <th>Capacidad</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var i in Model)
-                {
-                    <tr>
-                        <td>@i.nom_hotel</td>
-                        <td>@i.pre_hotel</td>
-                        <td>@i.m2_hotel</td>
-                        <td>@i.cap_hotel</td>
-                    </tr>
-                }
-            </tbody>
-
-        </table>
-    </div>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
-
